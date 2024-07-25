@@ -1,0 +1,184 @@
+.page {
+  /* Propiedades de la clase page */
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto; /* Centra el bloque */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 20px; /* Altura de línea */
+  font-family: "Arial", sans-serif; /* Familia tipográfica */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.nav__logo {
+  width: 58px;
+  height: 80px;
+}
+
+.nav__links {
+  /* Restablece los estilos predeterminados de list aquí */
+  display: flex;
+  column-gap: 20px; /* Espacio horizontal entre los elementos */
+  list-style-type: none; /* Elimina las viñetas de los elementos de la lista */
+  margin: 8px 0 0;
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px; /* Aplica dimensiones a los enlaces */
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row; /* Asegura que los elementos hijos se distribuyan en fila */
+  flex-grow: 1; /* Permite que el contenedor crezca para ocupar el espacio disponible */
+  justify-content: space-between; /* Cambia 'center' de nuevo a 'space-between' conforme al brief */
+}
+
+.header__title {
+  font-size: 62px; /* Tamaño de fuente del título */
+  font-weight: 500; /* Negritas para el título */
+  margin: 0 0 20px; /* Eliminar márgenes superiores e inferiores; agregar margen inferior */
+  max-width: 635px;
+  line-height: 76px;
+  margin-top: 128px; /* Cambia a '0' conforme al brief */
+  width: 100%;
+}
+
+.header__description {
+  font-size: 20px; /* Tamaño de fuente de la descripción */
+  line-height: 30px; /* Altura de línea */
+  margin: 0; /* Eliminar márgenes predeterminados */
+  max-width: 515px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.header__image {
+  width: 100%; /* Establece el ancho como se indica en el brief */
+  max-width: 636px; /* Corrige el valor incorrecto */
+  /* Puedes agregar estilos adicionales aquí si lo deseas */
+}
+
+/* Descomenta la imagen del encabezado */
+.header__image img {
+  display: block;
+  width: 100%;
+}
+
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+}
+
+.staff {
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
+  padding: 100px 0 140px;
+}
+
+.staff__title {
+  text-align: center;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.staff__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+.staff__cards {
+  max-width: 760px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 68px;
+  padding-left: 0;
+  list-style-type: none;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px 32px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 420px;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__text {
+  margin: 20px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__footer {
+  margin: 0;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 20px;
+  color: #838383;
+}
+
+.custom-class {
+  max-width: 760px;
+  margin: auto;
+}
