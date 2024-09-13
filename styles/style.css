@@ -366,17 +366,18 @@
   right: 80px;
   top: 60px;
   bottom: 60px;
-  
+  background-color: #000000;
 }
 
 .footer__columns {
-  
+    
 }
 
 .footer__column_content_hours {
   position: relative;
   left: 900px;
   bottom: 100px;
+  color: #fff;
 }
 
 .footer__column_content_social {
@@ -384,7 +385,7 @@
   flex-direction: column;
   padding-left: 1200px;
   bottom: 200px;
-
+  color: #fff;
 }
 
 .footer__logo {
@@ -394,14 +395,15 @@
 }
 
 .footer__list {
-  /* El siguiente código elimina los estilos predeterminados del navegador para las listas */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  display: flex;
   
+  color: #fff;
 }
 
 .footer__column-link {
@@ -410,8 +412,10 @@
 }
 
 .footer__social-icon {
+  
 
 }
-
 .footer__copyright {
+  color: #fff;
+
 }
